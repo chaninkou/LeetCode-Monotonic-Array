@@ -1,4 +1,4 @@
-package monotonic;
+package leetcode896;
 
 import java.util.Arrays;
 

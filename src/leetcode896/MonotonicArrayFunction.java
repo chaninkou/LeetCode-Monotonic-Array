@@ -1,4 +1,4 @@
-package monotonic;
+package leetcode896;
 
 public class MonotonicArrayFunction {
 	public boolean isMonotonic(int[] A) {
