@@ -10,8 +10,7 @@ public class MonotonicArrayFunction {
 		// length of the array
 		int n = A.length;
 
-		// increase is true when last element minus first element is greater
-		// than 0
+		// increase is true when last element minus first element > 0
 		boolean increase = (A[n - 1] - A[0]) > 0;
 
 		// 1,3,2
