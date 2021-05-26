@@ -28,20 +28,20 @@ public class MonotonicArrayFunction {
 	}
 
 	// // Easier solution using true and false base on "And" or "Or"
-	// public boolean isMonotonic(int[] A) {
-	// // increasing and decreasing is 1 by default
-	// boolean increasing = true;
-	// boolean decreasing = true;
+	 public boolean isMonotonic2(int[] A) {
+	 // increasing and decreasing is 1 by default
+	 boolean increasing = true;
+	 boolean decreasing = true;
 
-	// for(int i = 1; i < A.length; i++){
+	 for(int i = 1; i < A.length; i++){
 	// // 1,2,3 since true and true will be true, otherwise 1 and 0 is false
-	// increasing = increasing & A[i] >= A[i-1];
+	 increasing = increasing & A[i] >= A[i-1];
 
 	// // 3,2,1 since true and true will be true, otherwise 1 and 0 is false
-	// decreasing = decreasing & A[i] <= A[i-1];
-	// }
+	 decreasing = decreasing & A[i] <= A[i-1];
+	 }
 
 	// // Since 0 or 1 and 1 or 0 is true, otherwise will be false
-	// return increasing || decreasing;
-	// }
+	 return increasing || decreasing;
+	 }
 }
